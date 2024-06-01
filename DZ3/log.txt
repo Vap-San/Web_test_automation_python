@@ -1,0 +1,28 @@
+2024-06-01 22:43:49 INFO ====== WebDriver manager ======
+2024-06-01 22:43:51 INFO Get LATEST chromedriver version for google-chrome
+2024-06-01 22:43:51 INFO Get LATEST chromedriver version for google-chrome
+2024-06-01 22:43:51 INFO Driver [C:\Users\mashina\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+2024-06-01 22:43:53 INFO Test 1 Starting
+2024-06-01 22:43:55 INFO Send test to element //*[@id="login"]/div[1]/label/input
+2024-06-01 22:43:56 INFO Send PASSWORD to element //*[@id="login"]/div[2]/label/input
+2024-06-01 22:43:56 INFO Click login button
+2024-06-01 22:43:57 INFO We find text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2
+2024-06-01 22:43:57 INFO Test 2 Starting
+2024-06-01 22:43:57 INFO Send vapsan to element //*[@id="login"]/div[1]/label/input
+2024-06-01 22:43:57 INFO Send 76346ef18a to element //*[@id="login"]/div[2]/label/input
+2024-06-01 22:43:57 INFO Click login button
+2024-06-01 22:43:59 INFO We find text Hello, vapsan in error field ('xpath', '//*[@id="app"]/main/nav/ul/li[3]/a')
+2024-06-01 22:43:59 INFO Test 3 Starting
+2024-06-01 22:43:59 INFO Click create post button
+2024-06-01 22:44:00 INFO Send Test Post Title3 to element //*[@id='create-item']/div/div/div[1]/div/label/input
+2024-06-01 22:44:00 INFO Send Test Post description 3 to element //*[@id='create-item']/div/div/div[2]/div/label/span/textarea
+2024-06-01 22:44:00 INFO Send Test Post content 3. to element //*[@id='create-item']/div/div/div[3]/div/label/span/textarea
+2024-06-01 22:44:00 INFO Click save post button
+2024-06-01 22:44:02 INFO We find text Test Post Title3 in error field //*[@id='app']/main/div/div[1]/h1
+2024-06-01 22:44:02 INFO Test 4 Starting
+2024-06-01 22:44:02 INFO Click create contact
+2024-06-01 22:44:02 INFO Send Vladimir to element //*[@id="contact"]/div[1]/label/input
+2024-06-01 22:44:03 INFO Send vapsan@gmail.com to element //*[@id="contact"]/div[2]/label/input
+2024-06-01 22:44:03 INFO Send Text to send contact to element //*[@id="contact"]/div[3]/label/span/textarea
+2024-06-01 22:44:04 INFO Click submit contact
+2024-06-01 22:44:09 INFO We find text Form successfully submitted in alert
