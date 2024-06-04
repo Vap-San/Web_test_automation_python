@@ -1,0 +1,12 @@
+browser: firefox
+address: https://test-stand.gb.ru/
+username: vapsan
+password: 76346ef18a
+post_title: "Test Post Title3"
+post_description: "Test Post description 3"
+post_content: "Test Post content 3."
+your_name: "Vladimir"
+your_email: "vapsan@gmail.com"
+your_content: "Text to send contact"
+
+
