@@ -8,4 +8,3 @@ xpath:
   LOCATOR_ABOUT_PAGE: //*[@id="app"]/main/div/div/h1
 css:
   LOCATOR_LOGIN_BTN: button
-  #LOCATOR_ABOUT_PAGE2: //h1[contains(text(), "About Page")]
