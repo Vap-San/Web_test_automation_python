@@ -8,9 +8,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.common.exceptions import WebDriverException
 import logging
 
-logging.basicConfig(level=logging.INFO)
 
-# Загружаем данные о браузере из YAML файла
 with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
     browser_name = testdata["browser"]
@@ -19,7 +17,6 @@ with open("testdata.yaml") as f:
 def browser():
     if browser_name == "chrome":
         try:
-            # Инициализация драйвера для Chrome
             service = ChromeService(ChromeDriverManager().install())
             options = webdriver.ChromeOptions()
             driver = webdriver.Chrome(service=service, options=options)
@@ -28,7 +25,6 @@ def browser():
             raise
     elif browser_name == "firefox":
         try:
-            # Инициализация драйвера для Firefox
             service = FirefoxService(GeckoDriverManager().install())
             options = webdriver.FirefoxOptions()
             driver = webdriver.Firefox(service=service, options=options)
@@ -38,8 +34,8 @@ def browser():
     else:
         raise ValueError(f"Неизвестный браузер: {browser_name}")
 
-    yield driver  # Предоставление драйвера для тестов
-    driver.quit()  # Закрытие браузера после завершения тестов
+    yield driver
+    driver.quit()
 
 
 

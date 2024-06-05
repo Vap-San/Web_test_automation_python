@@ -17,9 +17,6 @@ class TestSearchLocators:
         ids[locator] = (By.CSS_SELECTOR, locators["css"][locator])
 
 class OperationsHelper(BasePage):
-
-# Вспомогательная функция для ввода текста поле
-
     def enter_text_intro_field(self, locator, word, description=None):
         if description:
             element_name = description
@@ -84,9 +81,7 @@ class OperationsHelper(BasePage):
     def click_about(self):
         self.click_button(TestSearchLocators.ids["LOCATOR_ABOUT"], description="Click About")
 
-
 #Методы получения текста
-
     def get_user_text(self):
         return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_HELLO"])
     def get_about_text(self):
